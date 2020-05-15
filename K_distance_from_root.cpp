@@ -7,26 +7,21 @@ void printKdistance(struct Node *root, int k)
 
 	q1.push(root); 
     int count=0;
- 
-
 	while (!q1.empty() || !q2.empty()) 
 	{ 
 		while (!q1.empty()) 
 		{ 
-		
 			if (q1.front()->left != NULL) 
 				q2.push(q1.front()->left); 
-
 		
 			if (q1.front()->right != NULL) 
 				q2.push(q1.front()->right); 
 
 		 if(count==k){
           cout<<q1.front()->data<<" ";
-        }
-            
+                 }
 			q1.pop(); 
-		} 
+	} 
     
 	count++;
     
@@ -42,15 +37,11 @@ void printKdistance(struct Node *root, int k)
 				q1.push(q2.front()->right); 
 
 			 if(count==k){
-          cout<<q2.front()->data<<" ";
-        }
+                          cout<<q2.front()->data<<" ";
+                          }
 			q2.pop(); 
          
 		} 
-      count++;
-		
-        
-    
+      count++;    
 	} 
-	
 }
