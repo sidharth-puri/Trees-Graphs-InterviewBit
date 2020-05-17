@@ -17,3 +17,7 @@ void bfs(int s, vector<int> g[], vector<bool> &vis, int N) {
     }
     }
 }
+
+
+// i have completed the dfs function in geeksforgeeks dfs practice problem.
+// see the stud from geekforgeeks.
