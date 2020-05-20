@@ -13,14 +13,12 @@ struct Node
 
 bool isBSTUtil(struct Node* root, Node *&prev) 
 { 
-	// traverse the tree in inorder fashion and 
-	// keep track of prev node 
+
 	if (root) 
 	{ 
 		if (!isBSTUtil(root->left, prev)) 
 		return false; 
 
-		// Allows only distinct valued nodes 
 		if (prev != NULL && root->data <= prev->data) 
 		return false; 
 
@@ -38,7 +36,7 @@ Node *prev = NULL;
 return isBSTUtil(root, prev); 
 } 
 
-/* Driver program to test above functions*/
+
 int main() 
 { 
 	struct Node *root = new Node(3); 
