@@ -1,11 +1,4 @@
-/*This is a function problem.You only need to complete the function given below*/
-/*Complete the function below
-Node is as follows:
-struct Node{
-  ll data;
-  Node *left,*right;
-};
-*/
+
 int printans(Node* root,int t,int arr[],int *l){
     if(root==NULL){
         return 0;
