@@ -32,3 +32,4 @@ bool isCousins(Node *root, int x, int y)
         return 0;
     }
 }
+// check geeksforgeeks for stub
